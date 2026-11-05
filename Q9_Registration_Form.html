@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+        }
+
+        .container {
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        button {
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Student Registration Form</h2>
+
+    <form>
+
+        Name:
+        <input type="text" placeholder="Enter Name" required>
+
+        Email:
+        <input type="email" placeholder="Enter Email" required>
+
+        Password:
+        <input type="password" placeholder="Enter Password" required>
+
+        Gender:<br>
+
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <br><br>
+
+        Date of Birth:
+        <input type="date">
+
+        Course:
+
+        <select>
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>BBA</option>
+            <option>MCA</option>
+        </select>
+
+        Hobbies:<br>
+
+        <input type="checkbox"> Reading
+        <input type="checkbox"> Sports
+        <input type="checkbox"> Music
+
+        <br><br>
+
+        Address:
+
+        <textarea placeholder="Enter Address"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
